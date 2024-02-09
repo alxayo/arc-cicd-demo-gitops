@@ -4,9 +4,9 @@ kind: Kustomization
 namespace: dev
 
 images:
-  - name: ivpkacr/.azurecr.io//azure-vote-front
-    newTag: 992f047edd31b77be642ae1952f45317591bad95
-  - name: ivpkacr/.azurecr.io//azure-vote-back
-    newTag: 992f047edd31b77be642ae1952f45317591bad95
+  - name: ivpkacr.azurecr.io//azure-vote-front
+    newTag: fd6f5493b0bd321e59e7ae13cb367c5b34cbbc8e
+  - name: ivpkacr.azurecr.io//azure-vote-back
+    newTag: fd6f5493b0bd321e59e7ae13cb367c5b34cbbc8e
 resources:
   - manifests.yaml
