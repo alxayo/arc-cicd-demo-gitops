@@ -1,4 +1,4 @@
 title: "Voting Application"
 serviceType: ClusterIP
-imageRepo: ivpkacr/.azurecr.io/
+imageRepo: ivpkacr.azurecr.io/
 demoAppUrl: "/"
