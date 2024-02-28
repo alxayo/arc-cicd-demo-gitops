@@ -47,6 +47,8 @@ spec:
         ports:
         - containerPort: 6379
           name: redis
+      imagePullSecrets:
+        - name: ivpckacr
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
@@ -77,6 +79,8 @@ spec:
         name: azure-vote-front
         ports:
         - containerPort: 80
+      imagePullSecrets:
+        - name: ivpckacr
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
