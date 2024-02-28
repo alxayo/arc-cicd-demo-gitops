@@ -40,13 +40,11 @@ spec:
       - env:
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
-        image: ivpkacr.azurecr.io/azvote/azure-vote-back:latest
+        image: ivpkacr.azurecr.io/azvote/azure-vote-back:7431f52e73c0f76cf5d8fe629e78362ffd3612d6
         name: azure-vote-back
         ports:
         - containerPort: 6379
           name: redis
-      imagePullSecrets:
-        - name: ivpckacr
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
@@ -71,12 +69,10 @@ spec:
           value: azure-vote-back
         - name: TITLE
           value: Voting Application
-        image: ivpkacr.azurecr.io/azvote/azure-vote-front:latest
+        image: ivpkacr.azurecr.io/azvote/azure-vote-front:7431f52e73c0f76cf5d8fe629e78362ffd3612d6
         name: azure-vote-front
         ports:
         - containerPort: 80
-      imagePullSecrets:
-        - name: ivpckacr
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---

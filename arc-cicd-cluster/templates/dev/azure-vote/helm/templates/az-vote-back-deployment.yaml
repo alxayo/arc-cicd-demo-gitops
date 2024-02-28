@@ -23,5 +23,3 @@ spec:
         ports:
         - containerPort: 6379
           name: redis
-        imagePullSecrets:
-        - name: ivpckacr
