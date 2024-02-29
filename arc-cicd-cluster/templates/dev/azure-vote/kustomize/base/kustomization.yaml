@@ -5,8 +5,8 @@ namespace: dev
 
 images:
   - name: ivpkacr.azurecr.io/azvote/azure-vote-front
-    newTag: 787b30c042546b4031502178a1e061c0b240520b
+    newTag: 73d57bcfc3a2add09922dd8186d06df9c5fd240e
   - name: ivpkacr.azurecr.io/azvote/azure-vote-back
-    newTag: 787b30c042546b4031502178a1e061c0b240520b
+    newTag: 73d57bcfc3a2add09922dd8186d06df9c5fd240e
 resources:
   - manifests.yaml
